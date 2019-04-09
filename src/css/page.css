@@ -1,0 +1,49 @@
+.category-item {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.category-item:not(:first-of-type) {
+  margin: 10px 0 0;
+}
+
+.category-item-img {
+  padding-top: 28%;
+}
+
+.category-item-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.28);
+}
+
+.category-item-bd {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1;
+  text-align: right;
+}
+
+.category-item-bd__tle {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.download-item {
+  display: block;
+  padding: 10px 13px;
+  color: #13487b;
+  background: #edf0f3;
+  border-radius: 4px;
+}
+
+.download-item:not(:first-of-type) {
+  margin: 6px 0 0;
+}

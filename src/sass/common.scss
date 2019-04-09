@@ -6,7 +6,7 @@ $colorBorder: #e5e5e5;
 @import "d:/wamp/www/mobile-docs/src/sass/sandal/function";
 
 body {
-  background: #f6f9fa;
+  background: #f9f9f9;
 }
 
 /* 小图标 */
@@ -14,6 +14,7 @@ body {
   display: inline-block;
   vertical-align: middle;
   background: url("../images/icon-sprites.png") no-repeat top left;
+  zoom: .5;
 }
 
 .icon-file { background-position: 0px 0px; width: 27px; height: 31px;  } 
@@ -21,3 +22,146 @@ body {
 .icon-loc { background-position: 0px -84px; width: 21px; height: 24px;  } 
 .icon-tel { background-position: 0px -118px; width: 21px; height: 22px;  } 
 .icon-earth { background-position: 0px -150px; width: 25px; height: 24px;  } 
+
+/* banner */
+.swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+}
+
+.swiper-pagination-bullet-active {
+  width: 18px;
+  border-radius: 20px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 0;
+}
+
+.swiper-category {
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  box-shadow: 0 2px 9px rgba(0, 0, 0, .14);
+}
+
+.category-slide-img {
+  width: 77px;
+  height: 67px;
+  border-radius: 5px;
+}
+
+.category-slide-bd {
+  &__tle {
+    max-height: 42px;
+  }
+}
+
+.mod-news-list {
+	background: #fff;
+}
+
+.mod-news-item {
+	display: flex;
+
+	&:not(:first-of-type) {
+		margin: 20px 0 0;
+	}
+
+	&__bd {
+		flex: 1;
+    overflow: hidden;
+
+		.mnib-tle {
+			font-size: 15px;
+		}
+
+		.mnib-txt,
+		.mnib-date {
+			font-size: 12px;
+			color: #656565;
+		}
+
+		.mnib-txt {
+			max-height: 36px;
+			@extend %ellipsis-lines-2;
+		}
+
+		.mnib-date {
+      margin: 8px 0 0;
+      color: #969696;
+		}
+	}
+
+	&__img {
+		width: 115px;
+		height: 97px;
+		margin: 0 15px 0 0;
+		overflow: hidden;
+		border-radius: 5px;
+	}
+}
+
+.mod-tle {
+  padding: 0 0 0 10px;
+  font-size: 15px;
+  line-height: 1.1;
+  border-left: 4px solid $primary;
+}
+
+.mbui-article__bd p {
+  color: #878787;
+}
+
+.mod-bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	padding-top: 65%;
+	background: $primary;
+
+	&:after {
+		position: absolute;
+		bottom: -40px;
+		left: 50%;
+		width: 120%;
+		height: 80px;
+		background: $primary;
+		border-radius: 50%;
+		content: "";
+		transform: translate(-50%, 0);
+	}
+}
+
+.mod-msg-box {
+	box-shadow: 0 1px 15px rgba(0, 0, 0, .07);
+}
+
+.mod-form-item {
+	background: #f3f7fa;
+	border-radius: 5px;
+
+	& + .mod-form-item {
+		margin: 12px 0 0;
+	}
+
+	.mbui-input {
+		width: 100%;
+		padding: 15px 20px;
+	}
+}
+
+.mod-textarea {
+  height: 165px;
+}
+
+.mod-contact {
+	border-top:  1px solid #b5b5b5;
+
+	&-icon {
+		display: inline-block;
+		vertical-align: middle;
+		min-width: 20px;
+	}
+}
