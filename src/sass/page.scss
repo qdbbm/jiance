@@ -14,7 +14,7 @@ $primary: #1467b7;
   }
 
   &-img {
-    padding-top: 28%;
+    padding-top: 21%;
   }
 
   &-mask {
@@ -28,17 +28,23 @@ $primary: #1467b7;
 
   &-bd {
     position: absolute;
-    bottom: 10px;
+    top: 50%;
     right: 10px;
     z-index: 1;
     text-align: right;
+    transform: translate(0, -50%);
 
     &__tle {
-      font-size: 25px;
+      font-size: 20px;
       font-weight: 500;
       line-height: 1.2;
       color: #fff;
     }
+
+    .mbui-btn-sm {
+      padding: 0 5px 0 10px;
+			line-height: 24px;
+		}
   }
 }
 

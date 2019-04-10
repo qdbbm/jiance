@@ -9,7 +9,7 @@
 }
 
 .category-item-img {
-  padding-top: 28%;
+  padding-top: 21%;
 }
 
 .category-item-mask {
@@ -23,17 +23,24 @@
 
 .category-item-bd {
   position: absolute;
-  bottom: 10px;
+  top: 50%;
   right: 10px;
   z-index: 1;
   text-align: right;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 .category-item-bd__tle {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   color: #fff;
+}
+
+.category-item-bd .mbui-btn-sm {
+  padding: 0 5px 0 10px;
+  line-height: 24px;
 }
 
 .download-item {
